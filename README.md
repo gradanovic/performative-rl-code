@@ -1,1 +1,1 @@
-# performative-rl-code
+# neurips2022-performative-rl-code
