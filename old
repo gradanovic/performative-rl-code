@@ -1,0 +1,46 @@
+# # Fixed beta
+    # print(f'\nFixed beta: {fbeta}')
+    # env = GridworldV1(fbeta, pp, gamma)
+
+    # d_diff = {} 
+    # for lamda in lamdas:
+    #     print(f'lamda: {lamda}')
+    #     env.reset()
+    #     algorithm = Performative_Prediction(env, max_iterations, lamda)
+    #     algorithm.retrain()
+    #     d_diff[lamda] = [algorithm.c * d for d in algorithm.d_diff]
+
+    # # file directories
+    # if not os.path.exists(f'data/fixed_beta'):
+    #     os.mkdir(f'data/fixed_beta')
+
+    # # store differences in state-action ovccupancy measures over different lamdas
+    # with open(f'data/fixed_beta/beta{fbeta}.json', 'w') as f:
+    #     json.dump(d_diff, f, indent=4)
+
+    # # Fixed lamda
+    # print(f'\nFixed lamda: {flamda}')
+
+    # d_diff = {} 
+    # for beta in betas:
+    #     print(f'beta: {beta}')
+    #     env = GridworldV1(beta, pp, gamma)
+    #     algorithm = Performative_Prediction(env, max_iterations, flamda)
+    #     algorithm.retrain()
+    #     d_diff[beta] = [algorithm.c * d for d in algorithm.d_diff]
+
+    # # file directories
+    # if not os.path.exists(f'data/fixed_lamda'):
+    #     os.mkdir(f'data/fixed_lamda')
+
+    # # store differences in state-action occupancy measures over different betas
+    # with open(f'data/fixed_lamda/lamda{flamda}.json', 'w') as f:
+    #     json.dump(d_diff, f, indent=4)
+
+
+
+
+    
+    
+    
+

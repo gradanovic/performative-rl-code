@@ -1,1 +1,2 @@
-# neurips2022-performative-rl-code
+# performative-rl
+performative reinforcement learning
