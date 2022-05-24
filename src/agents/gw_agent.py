@@ -1,5 +1,3 @@
-import numpy as np
-
 from src.policies.random import Random_Policy
 
 

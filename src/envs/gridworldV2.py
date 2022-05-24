@@ -2,12 +2,6 @@ import numpy as np
 from numpy.testing import assert_almost_equal
 import copy
 import itertools
-#
-# TODO
-import os
-import seaborn as sns; sns.set()
-import matplotlib.pyplot as plt
-#
 
 from src.agents.gw_agent import Agent
 from src.policies.policies import *
@@ -34,12 +28,6 @@ class GridworldV2():
              [-0.01, h, h, -0.01, f, -0.01, h, -0.01],
              [-0.01, h, -0.01, -0.01, h, -0.01, h, -0.01],
              [-0.01, -0.01, -0.01, h, -0.01, f, -0.01, +1]])
-        # save initial grid
-        if not os.path.exists('grids/initial_grid.png'):
-            ax = sns.heatmap(self.initial_grid, annot=True, cbar=None)
-            plt.title("Initial Grid",fontsize=12)
-            plt.savefig("grids/initial_grid.png", bbox_inches='tight', dpi=100, )
-            plt.close()
         self.grid_shape = self.initial_grid.shape
         self.dim = np.prod(self.grid_shape)
         self.state_ids = range(self.dim)

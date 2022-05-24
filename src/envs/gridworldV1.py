@@ -2,7 +2,6 @@ import numpy as np
 from numpy.testing import assert_almost_equal
 import copy
 import itertools
-import os
 import json
 
 from src.agents.gw_agent import Agent

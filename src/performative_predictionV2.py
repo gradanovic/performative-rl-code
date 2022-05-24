@@ -1,9 +1,3 @@
-#
-# TODO
-import seaborn as sns; sns.set()
-import matplotlib.pyplot as plt
-#
-
 import numpy as np
 import cvxpy as cp
 
@@ -51,12 +45,6 @@ class Performative_PredictionV2():
             env.update_grid(self.d_last)
             # update rewards and transition functions
             self.R, self.T = env._get_RT()
-
-        # save final grid
-        ax = sns.heatmap(env.grid, annot=True, cbar=None)
-        plt.title(f'Final Grid - $\gamma$={env.gamma} - $\lambda$={self.lamda}',fontsize=18)
-        plt.savefig(f'grids/final_grid_gamma{env.gamma}_lambda_{self.lamda}.png', bbox_inches='tight', dpi=100, )
-        plt.close()
 
         return
 
