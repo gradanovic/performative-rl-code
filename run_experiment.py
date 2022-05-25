@@ -22,7 +22,7 @@ from src.generate_plots import generate_plots
 @click.option('--regs', multiple=True, default=[], type=click.Choice(['L2', 'ER']), help='List of values for regularizer')
 # gradient
 @click.option('--feta', default=1, type=float, help='Fixed value for (step size) parameter eta')
-@click.option('--etas', multiple=True, default=[0, .01, .1, .5, 1, 2], type=float, help='List of values for (step size) parameter eta')
+@click.option('--etas', multiple=True, default=[.05, .1, .2, 1, 2], type=float, help='List of values for (step size) parameter eta')
 # sampling
 @click.option('--fn_sample', default=200, type=int, help='Fixed value for number of samples')
 @click.option('--n_samples', multiple=True, default=[20, 50, 100, 200, 500, 1000], type=int, help='List of values for number of samples')
