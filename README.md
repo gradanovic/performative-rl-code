@@ -1,4 +1,4 @@
-NeurIPS 2022 -- Performative Reinforcement Learning
+Performative Reinforcement Learning
 
 ## Prerequisites:
 ```
